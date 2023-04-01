@@ -1,0 +1,373 @@
+/* *common css starts here */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;500;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, li{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+:root{
+    --primary-font:'Raleway', sans-serif;
+    --secondary-font:'Open Sans', sans-serif;
+    --black-grey:#333333;
+    --deep-red-color:#cc3333;
+}
+
+body{
+    font-family: var(--primary-font);
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* *common css ends here */
+
+
+
+
+
+/* *top-bar starts here */
+
+.top-bar{
+    width: 100%;
+    background-color: #054e61;
+}
+
+.container{
+    width: 1170px;
+    margin: auto;
+}
+
+.row{
+    justify-content: space-between;
+}
+
+.top-bar ul li{
+    display: inline-block;
+    padding: 20px 7px;
+    color: #ffffff;
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    font-size: 16px;
+    border-right: 1px solid #d6d6d636;
+    
+}
+.top-bar ul li select{
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    
+}
+.top-bar ul li select option{
+    color: black;
+    font-weight: 500;
+    
+}
+
+.top-bar ul li:last-child{
+    border: none;
+}
+
+.top-bar ul li a{
+    color: #ffffff;
+}
+
+/* *top-bar ends here */
+
+
+
+
+
+/* *navber starts here */
+
+#nav-ber{
+    background-color: #ffffff;
+    box-shadow: 1px 1px 5px 1px #e0dede;
+}
+
+#nav-ber .row{
+    align-items: center;
+}
+
+
+#nav-ber ul li{
+    display: inline-block;
+    padding: 50px 12px;
+}
+
+#nav-ber ul li a{
+    padding: 0 8px;
+    display: inline-block;
+    font-family: var(--secondary-font);
+    font-weight: 550;
+    font-size: 20px;
+    color: #000000;
+    position: relative;
+    
+    
+}
+
+#nav-ber ul li a::after{
+    content: '';
+    position: absolute;
+    background-color: var(--deep-red-color);
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+}
+#nav-ber ul li a:hover::after{
+    width: 100%;
+}
+
+
+
+#nav-ber .items a{
+    padding-right: 18px;
+    color: #000000;
+    font-weight: 500;
+    font-size: 18px;
+}
+#nav-ber .items span a{
+    color: #de4644;
+}
+#nav-ber .items span {
+    color: #de4644;
+}
+
+/* *navber ends here */
+
+
+
+
+
+
+/* *banner starts here */
+
+#banner{
+    background-image: url(./image/cover\ page.jpg);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000000a9;
+    background-blend-mode: multiply;
+}
+
+#banner .box{
+    width: 660px;
+    color: #ffffff;
+    margin: 150px 0px;
+}
+
+
+#banner .box h2{
+    font-weight: 800;
+    font-size: 70px;
+    padding: 23px 0px;
+    color: var(--deep-red-color);
+}
+
+#banner .box h4{
+    font-weight: 400;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+#banner .box p{
+    font-size: 20px;
+    font-weight: 400px;
+    padding: 30px 0px;
+    font-family: var(--secondary-font);
+    line-height: 1.9;
+    
+}
+
+
+#banner .button{
+    color: #462a1d;;
+    display: inline-block;
+    margin-top: 70px;
+}
+
+#banner .button a{
+    color: #ffffff;
+    
+}
+
+#banner .View-more{
+    display: inline-block;
+    
+}
+
+
+#banner .View-more a{
+    border-radius: 3px;
+    border: 1px solid #b1abab7c;
+    padding: 22px 30px;
+    font-family: var(--secondary-font);
+    font-weight: 600;
+    font-size: 18px;
+    transition: 0.5s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#banner .View-more a:hover{
+    border: none;
+    background-color: var(--deep-red-color);
+}
+
+
+#banner .Purchase{
+    display: inline-block;
+}
+
+#banner .Purchase a{
+    padding: 22px 30px ;
+    border-radius: 3px;
+    border: 1px solid #b1abab7c;
+    margin: 0px 30px;
+    font-family: var(--secondary-font);
+    font-weight: 600;
+    font-size: 18px;
+    transition: 0.5s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#banner .Purchase a:hover{
+    border: none;
+    background-color: var(--deep-red-color);
+}
+
+
+#banner .angle-right-icon{
+    text-align: center;
+    padding: 30px;
+    
+}
+#banner .angle-right-icon i{
+    font-size: 40px;
+    padding: 7px 17px;
+    border-radius: 3px;
+    border: 1px solid #b1abab7c;
+    margin: 11px;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+#banner .angle-right-icon i:hover{
+    border: none;
+    background-color: var(--deep-red-color);
+}
+/* *banner ends here */
+
+
+
+
+
+
+/* *Shipping starts here*/
+
+#shipping .body{
+    width: 100%;
+    background-color: #f1f1f1;
+}
+#shipping .row{
+    justify-content: space-between;
+}
+#shipping .body .box{
+    width: 350px;
+    text-align: center;
+    margin: 40px 0;
+}
+#shipping .body .box h4{
+    margin-bottom: 38px;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: var(--primary-font);
+    color: #333333;
+}
+
+#shipping .body .box p{
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #333333;
+}
+#shipping .body .box h4:hover{
+    color: var(--deep-red-color);
+}
+/* *Shipping ends here */
+
+
+
+
+
+/* *fasion-image starts here */
+
+#fasion-image .row{
+}
+
+
+#fasion-image .fasion{
+    margin: 100px 0px;
+}
+
+#fasion-image .fasion{
+    position: relative;
+}
+
+#fasion-image .fasion-box{
+    width: 332px;
+    height: 152px;
+    margin: auto;
+    background-color: #054e61;
+    position: absolute;
+    inset: 0;
+    text-align: center;
+    margin-bottom: 21px;
+}
+#fasion-image .fasion-box .text-box{
+    background-color: #054e61;
+    margin: 15px;
+    
+}
+
+#fasion-image .fasion-box .text-box h3{
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+#fasion-image .fasion-box .text-box h4{
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+#fasion-image .fasion-box .text-box a{
+    display: inline-block;
+    padding: 56px 117px;
+    color: #ffffff;
+    background-color: #cc3333;
+}
+
+
+/* *fasion-image ends here */
